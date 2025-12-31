@@ -1,0 +1,23 @@
+
+{
+  "name": "cordova-plugin-justcash",
+  "version": "1.0.0",
+  "description": "Cordova JustCash Plugin",
+  "cordova": {
+    "id": "cordova-plugin-justcash",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": "github:LibSEA/cordova-plugin-justcash",
+  "bugs": "https://github.com/LibSEA/cordova-plugin-justcash/issues",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Liberatory Software Engineering Association",
+  "license": "AGPL"
+}

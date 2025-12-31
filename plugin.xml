@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-mixnet" version="0.2.3">
+    <name>Mixnet</name>
+    <description>Mixnet Cordova Plugin</description>
+    <license>AGPL</license>
+    <keywords>cordova,mixnet</keywords>
+    <js-module src="www/mixnet.js" name="mixnet">
+        <clobbers target="mixnet" />
+    </js-module>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Mixnet">
+                <param name="android-package" value="org.libsea.mixnet.Mixnet"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Mixnet.java" target-dir="src/org/libsea/mixnet" />
+        <framework src="src/android/mixnet.gradle" custom="true" type="gradleReference" />
+        <lib-file src="src/android/mixnet.aar" />
+    </platform>
+</plugin>
+
