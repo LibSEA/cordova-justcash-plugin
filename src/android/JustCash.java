@@ -1,4 +1,4 @@
-package org.libsea.justcash;
+package com.loop46.justcash;
  
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CallbackContext;
@@ -12,13 +12,14 @@ public class JustCash extends CordovaPlugin {
      public JustCash() {
      }
 
-     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-             super.initialize(cordova, webView);
+     public void pluginInitialize() {
+             super.pluginInitialize();
+             com.loop46.justcash.JustcashKt.init();
      }
 
      public boolean execute(String action, JSONArray args,
                      CallbackContext callbackContext) throws JSONException {
-             callbackContext.success(justcashlib.init());
+             callbackContext.success();
              return true;
      }
 }
