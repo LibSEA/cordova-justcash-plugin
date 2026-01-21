@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-mixnet" version="0.2.3">
-    <name>Mixnet</name>
-    <description>Mixnet Cordova Plugin</description>
+        id="cordova-plugin-justcash" version="0.2.3">
+    <name>JustCash</name>
+    <description>JustCash Cordova Plugin</description>
     <license>AGPL</license>
-    <keywords>cordova,mixnet</keywords>
-    <js-module src="www/mixnet.js" name="mixnet">
-        <clobbers target="mixnet" />
+    <keywords>cordova,justcash</keywords>
+    <js-module src="www/justcash.js" name="justcash">
+        <clobbers target="justcash" />
     </js-module>
     <platform name="android">
         <config-file target="config.xml" parent="/*">
-            <feature name="Mixnet">
-                <param name="android-package" value="org.libsea.mixnet.Mixnet"/>
+            <feature name="JustCash">
+                <param name="android-package" value="com.loop46.justcash"/>
             </feature>
         </config-file>
-        <source-file src="src/android/Mixnet.java" target-dir="src/org/libsea/mixnet" />
-        <framework src="src/android/mixnet.gradle" custom="true" type="gradleReference" />
-        <lib-file src="src/android/mixnet.aar" />
+        <source-file src="src/android/JustCash.java" target-dir="src/com/loop46/justcash" />
+        <framework src="src/android/justcash.gradle" custom="true" type="gradleReference" />
     </platform>
 </plugin>
 
